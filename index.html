@@ -2,221 +2,717 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Motion</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <!-- nav -->
-    <div id="nav" class="nav">
-      <img class="nav-logo" src="images/logo-gri.png" alt="" />
-      <img class="nav-avatar" src="images/netflix-avatar.png" alt="" />
-    </div>
 
-    <!-- header -->
-    <header class="banner">
-      <div class="banner-contents">
-        <h1 class="banner-title">Cobra Kai</h1>
-        <div class="banner-buttons">
-          <button class="banner-button">Play</button>
-          <button class="banner-button">My List</button>
+  <body>
+    <header class="header">
+      <nav id="nav" class="nav" aria-label="Main navigation">
+        <img class="nav-logo" src="images/logo-gri.png" alt="Dev Motion logo" />
+        <img
+          class="nav-avatar"
+          src="images/netflix-avatar.png"
+          alt="User profile"
+        />
+      </nav>
+
+      <section class="banner" aria-label="Featured show: Cobra Kai">
+        <div class="banner-contents">
+          <h1 class="banner-title">Cobra Kai</h1>
+          <div class="banner-buttons">
+            <button class="banner-button" aria-label="Play Cobra Kai">
+              Play
+            </button>
+            <button class="banner-button" aria-label="Add Cobra Kai to My List">
+              My List
+            </button>
+          </div>
+          <p class="banner-description">
+            Johnny Lawrence is a failed karate champion who becomes a reluctant
+            mentor to a teenage boy from a rough neighborhood.
+          </p>
         </div>
-        <h1 class="banner-description">
-          Jhonny Lawrence is a failed karate champion who becomes a
-          reluctant mentor to a teenage boy from a rough neighborhood.
-        </h1>
-      </div>
-      <div class="banner--fadeBottom"></div>
+        <div class="banner--fadeBottom"></div>
+      </section>
     </header>
 
-    <!-- Netflix Originals -->
-    <div class="row">
-      <h2>NETFLIX ORIGINALS</h2>
-      <div class="row-posters">
-        <img class="row-poster row-posterLarge" src="images/large-movie5.jpg" alt="" />
+    <main>
+      <section class="row" aria-labelledby="originals">
+        <h2 id="originals">DevMotion Originals</h2>
+        <div class="row-posters">
+          <a
+            href="#modal1"
+            class="poster-link"
+            aria-haspopup="dialog"
+            aria-controls="modal1"
+          >
+            <img
+              class="row-poster row-posterLarge"
+              src="images/large-movie5.jpg"
+              alt="Movie poster 1"
+            />
+          </a>
+          
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie1.jpg"
+            alt="Movie poster 2"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie2.jpg"
+            alt="Movie poster 3"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie3.jpg"
+            alt="Movie poster 4"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie4.jpg"
+            alt="Movie poster 5"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie6.jpg"
+            alt="Movie poster 6"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie7.jpg"
+            alt="Movie poster 7"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie8.jpg"
+            alt="Movie poster 8"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie5.jpg"
+            alt="Movie poster 1"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie1.jpg"
+            alt="Movie poster 2"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie2.jpg"
+            alt="Movie poster 3"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie3.jpg"
+            alt="Movie poster 4"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie4.jpg"
+            alt="Movie poster 5"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie6.jpg"
+            alt="Movie poster 6"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie7.jpg"
+            alt="Movie poster 7"
+          />
+          <img
+            class="row-poster row-posterLarge"
+            src="images/large-movie8.jpg"
+            alt="Movie poster 8"
+          />
+        </div>
+      </section>
 
-        <img class="row-poster row-posterLarge" src="images/large-movie1.jpg" alt="" />
+      <section class="row" aria-labelledby="trending">
+        <h2 id="trending">Trending Now</h2>
+        <div class="row-posters">
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Trending movie 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Trending movie 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Trending movie 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Trending movie 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Trending movie 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Trending movie 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Trending movie 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Trending movie 8"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Trending movie 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Trending movie 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Trending movie 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Trending movie 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Trending movie 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Trending movie 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Trending movie 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Trending movie 8"
+          />
+        </div>
+      </section>
 
-        <img class="row-poster row-posterLarge" src="images/large-movie2.jpg" alt="" />
+      <section class="row" aria-labelledby="toprated">
+        <h2 id="toprated">Top Rated</h2>
+        <div class="row-posters">
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Top rated 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Top rated 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Top rated 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Top rated 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Top rated 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Top rated 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Top rated 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Top rated 8"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Top rated 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Top rated 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Top rated 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Top rated 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Top rated 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Top rated 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Top rated 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Top rated 8"
+          />
+        </div>
+      </section>
 
-        <img class="row-poster row-posterLarge" src="images/large-movie3.jpg" alt="" />
+      <section class="row">
+        <h2>Action Movies</h2>
+        <div class="row-posters">
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Action 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Action 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Action 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Action 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Action 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Action 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Action 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Action 8"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Action 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Action 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Action 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Action 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Action 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Action 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Action 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Action 8"
+          />
+        </div>
+      </section>
 
-        <img class="row-poster row-posterLarge" src="images/large-movie4.jpg" alt="" />
+      <section class="row">
+        <h2>Comedy Movies</h2>
+        <div class="row-posters">
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Comedy 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Comedy 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Comedy 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Comedy 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Comedy 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Comedy 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Comedy 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Comedy 8"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Comedy 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Comedy 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Comedy 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Comedy 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Comedy 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Comedy 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Comedy 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Comedy 8"
+          />
+        </div>
+      </section>
 
-        <img class="row-poster row-posterLarge" src="images/large-movie6.jpg" alt="" />
+      <section class="row">
+        <h2>Horror Movies</h2>
+        <div class="row-posters">
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Horror 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Horror 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Horror 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Horror 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Horror 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Horror 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Horror 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Horror 8"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Horror 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Horror 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Horror 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Horror 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Horror 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Horror 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Horror 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Horror 8"
+          />
+        </div>
+      </section>
 
-        <img class="row-poster row-posterLarge" src="images/large-movie7.jpg" alt="" />
+      <section class="row">
+        <h2>Documentaries</h2>
+        <div class="row-posters">
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Documentary 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Documentary 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Documentary 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Documentary 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Documentary 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Documentary 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Documentary 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Documentary 8"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie1.jpg"
+            alt="Documentary 1"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie2.jpg"
+            alt="Documentary 2"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie3.jpg"
+            alt="Documentary 3"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie4.jpg"
+            alt="Documentary 4"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie5.jpg"
+            alt="Documentary 5"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie6.jpg"
+            alt="Documentary 6"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie7.jpg"
+            alt="Documentary 7"
+          />
+          <img
+            class="row-poster"
+            src="images/small-movie8.jpg"
+            alt="Documentary 8"
+          />
+        </div>
+      </section>
+    </main>
 
-        <img class="row-poster row-posterLarge" src="images/large-movie8.jpg" alt="" />
+    <div
+      id="modal1"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal1-title"
+    >
+      <div class="modal-content">
+        <a href="#" class="close" aria-label="Close dialog">&times;</a>
+
+        <div class="modal-header">
+          <img
+            src="images/large-movie5.jpg"
+            alt="Cobra Kai poster"
+            class="modal-poster"
+          />
+          <div class="modal-info">
+            <h2 id="modal1-title">Cobra Kai</h2>
+            <p class="modal-meta">
+              ⭐ <strong>8.5/10</strong> &nbsp; | &nbsp; Action, Drama, Comedy
+              &nbsp; | &nbsp; 5 Seasons
+            </p>
+            <p class="modal-description">
+              Johnny Lawrence, a down-and-out martial artist, reopens the
+              infamous Cobra Kai dojo, reigniting his rivalry with Daniel
+              LaRusso decades after their fateful karate tournament — a story of
+              pride, redemption, and balance.
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=xCwwxNbtK6Y"
+              target="_blank"
+              rel="noopener"
+              class="modal-trailer"
+              >▶ Watch Trailer</a
+            >
+          </div>
+        </div>
+
+        <div class="modal-video">
+          <iframe
+            src="https://www.youtube.com/embed/xCwwxNbtK6Y"
+            title="Cobra Kai Trailer"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
 
-    <!-- Trending Now -->
-    <div class="row">
-      <h2>Trending Now</h2>
-      <div class="row-posters">
-        <img class="row-poster" src="images/small-movie1.jpg" alt="" />
 
-        <img class="row-poster" src="images/small-movie2.jpg" alt="" />
+    
 
-        <img class="row-poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Top Rated -->
-    <div class="row">
-      <h2>Top Rated</h2>
-      <div class="row-posters">
-        <img class="row-poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Action Movies -->
-    <div class="row">
-      <h2>Action Movies</h2>
-      <div class="row-posters">
-        <img class="row-poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Comedy Movies -->
-    <div class="row">
-      <h2>Comedy Movies</h2>
-      <div class="row-posters">
-        <img class="row-poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Horror Movies -->
-    <div class="row">
-      <h2>Horror Movies</h2>
-      <div class="row-posters">
-        <img class="row-poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Romance Movies -->
-    <div class="row">
-      <h2>Romance Movies</h2>
-      <div class="row-posters">
-        <img class="row-poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Documentaries -->
-    <div class="row">
-      <h2>Documentaries</h2>
-      <div class="row-posters">
-        <img class="row-poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row-poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
 
     <footer class="footer">
-      <h2>Footer Section</h2>
       <p>© 2025 DevMotion. All rights reserved.</p>
     </footer>
+
     <script>
-      const nav = document.getElementById('nav');
-      window.addEventListener('scroll', () => {
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => {
         if (window.scrollY >= 100) {
-          nav.classList.add('nav-black');
+          nav.classList.add("nav-black");
         } else {
-          nav.classList.remove('nav-black');
+          nav.classList.remove("nav-black");
         }
       });
     </script>

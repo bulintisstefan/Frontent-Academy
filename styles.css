@@ -41,7 +41,7 @@ body {
 }
 
 .banner {
-  background-image: url("images/cbk.jpg");
+  background-image: url("images/banner2.png");
   background-size: cover;
   background-position: center center;
   color: white;
@@ -205,7 +205,6 @@ body {
   animation: popUp 0.4s ease;
 }
 
-/* HEADER SECTION */
 .modal-header {
   display: flex;
   flex-wrap: wrap;

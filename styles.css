@@ -256,7 +256,6 @@ body {
   background-color: #b00610;
 }
 
-/* VIDEO EMBED */
 .modal-video {
   margin-top: 25px;
   display: flex;
@@ -272,7 +271,6 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
-/* CLOSE BUTTON */
 .close {
   position: absolute;
   top: 10px;
@@ -287,7 +285,6 @@ body {
   color: #e50914;
 }
 
-/* ANIMATIONS */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -308,20 +305,97 @@ body {
   }
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
+ 
+  .nav {
+    padding: 10px 15px;
+  }
+
+  .nav-logo {
+    width: 100px;
+  }
+
+  .nav-avatar {
+    width: 50px;
+  }
+
+  .banner {
+    height: 320px;
+    background-position: top center;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    width: 100%; 
+    font-size: 1rem;
+    height: auto;
+    max-width: 90%;
+    padding-right: 10px;
+  }
+
+  .banner-button {
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .banner-contents {
+    padding-top: 100px;
+    margin-left: 20px;
+  }
+
+  .row {
+    margin-left: 10px;
+  }
+
+  .row h2 {
+    font-size: 1.1rem;
+    margin-left: 5px;
+  }
+
+  .row-poster {
+    max-height: 70px;
+  }
+
+  .row-posterLarge {
+    max-height: 150px;
+  }
+
+  .row-posters {
+    gap: 6px;
+    padding: 10px;
+  }
+
+ 
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
   .modal-header {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
   .modal-poster {
-    width: 60%;
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  .modal-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-description {
+    font-size: 0.9rem;
   }
 
   .modal-video iframe {
     width: 100%;
-    height: 220px;
+    height: 200px;
   }
 }
